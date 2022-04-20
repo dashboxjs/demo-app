@@ -1,0 +1,326 @@
+{
+  "global": {
+    "none": "None",
+    "actions": {
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "submit": "Submit",
+      "close": "Close"
+    },
+    "blueprint": {
+      "node": "Node",
+      "invalidNode": "Invalid Node",
+      "titles": {
+        "addNode": "Add Node",
+        "connection": "Connection"
+      },
+      "actions": {
+        "deleteNode": "Delete Node",
+        "deleteConnection": "Delete Connection"
+      }
+    },
+    "options": {
+      "themeLayouts": "Theme Layouts",
+      "moduleViews": "{{name}} Views",
+      "errors": {
+        "required": "{{name}} is required",
+        "pattern": "{{name}} format is invalid",
+        "min": "{{name}} should be greater than equal to min",
+        "max": "{{name}} should be lower than equal to max"
+      }
+    }
+  },
+  "welcome": {
+    "preview": "Preview"
+  },
+  "views": {
+    "title": "Views",
+    "contextMenu": {
+      "gizmo": "Gizmo",
+      "showOrCreateNode": "Show or Create Node",
+      "deleteGizmo": "Delete Gizmo",
+      "deleteGizmoConfirmation": {
+        "title": "Delete Gizmo?",
+        "message": "Do you really want to delete this gizmo and all its configuration? This action is irreversible.",
+        "button": "Delete Gizmo"
+      }
+    },
+    "structure": {
+      "modules": {
+        "name": "Modules",
+        "createModule": "Create Module",
+        "createModulePrompt": "Module Name…"
+      },
+      "module": {
+        "name": "{{name}} Module",
+        "routes": "Routes",
+        "createView": "Create View",
+        "createViewPrompt": "View Name…",
+        "createGroup": "Create Group",
+        "createGroupPrompt": "Group Name…",
+        "deleteModule": "Delete Module",
+        "deleteModuleConfirmation": {
+          "title": "Delete {{name}} module and Views?",
+          "message": "Do you really want to delete this module and all its views? This action is irreversible.",
+          "button": "Delete Module"
+        }
+      },
+      "group": {
+        "name": "{{name}} Group",
+        "deleteGroup": "Delete Group",
+        "deleteGroupConfirmation": {
+          "title": "Delete {{name}} Group and Views?",
+          "message": "Do you really want to delete this group and all its views? This action is irreversible.",
+          "button": "Delete Group"
+        }
+      },
+      "view": {
+        "name": "{{name}} View",
+        "deleteView": "Delete View",
+        "deleteViewConfirmation": {
+          "title": "Delete {{name}} View?",
+          "message": "Do you really want to delete this view and all its gizmos? This action is irreversible.",
+          "button": "Delete View"
+        }
+      }
+    },
+    "composer": {
+      "title": "Composer",
+      "emptyView": "Drop Gizmos here to fill this view",
+      "dropGizmoHere": "Drop Gizmo Here",
+      "sidebar": {
+        "tabs": {
+          "inspector": "Inspector",
+          "gizmos": "Gizmos"
+        },
+        "inspector": {
+          "placeholder": "Select a gizmo to inspect it",
+          "namePlaceholder": "Gizmo Name…",
+          "styles": {
+            "styles": "Styles",
+            "spacings": "Spacings"
+          }
+        },
+        "gizmos": {
+          "search": "Search…",
+          "categories": {
+            "commonlyUsed": "Commonly Used",
+            "action": "Actions",
+            "dataDisplay": "Data Displays",
+            "dataEntry": "Data Entries",
+            "feedback": "Feedbacks",
+            "layout": "Layouts",
+            "misc": "Miscellaneous"
+          },
+          "notFound": {
+            "line1": "No gizmo found",
+            "line2": "Try another search"
+          }
+        }
+      }
+    },
+    "blueprint": {
+      "title": "Blueprint",
+      "nodes": {
+        "gizmo": {
+          "name": "Gizmo"
+        },
+        "input-route": {
+          "name": "Route Input",
+          "options": {
+            "key": "Key",
+            "keyHint": "Route Parameter Key, e.g. 'id' for /users/:id"
+          }
+        },
+        "value-text": {
+          "name": "Text Value",
+          "options": {
+            "value": "Value"
+          }
+        },
+        "value-markdown": {
+          "name": "Markdown Value",
+          "options": {
+            "value": "Value"
+          }
+        },
+        "value-boolean": {
+          "name": "Boolean Value",
+          "options": {
+            "value": "Value"
+          }
+        },
+        "input-view": {
+          "name": "View Input",
+          "options": {
+            "key": "Key"
+          }
+        },
+        "output": {
+          "name": "View Output",
+          "options": {
+            "key": "Key"
+          }
+        },
+        "navigate": {
+          "name": "Navigate",
+          "options": {
+            "path": "Path / URL",
+            "openInNewTab": "Open in new tab"
+          }
+        },
+        "debug-logger": {
+          "name": "Logger",
+          "options": {
+            "name": "Name"
+          }
+        }
+      },
+      "nodesConnectors": {
+        "value": "Value",
+        "trigger": "Trigger"
+      },
+      "nodesCategories": {
+        "gizmo": "Gizmo",
+        "inputOutput": "Input / Output",
+        "value": "Value"
+      }
+    }
+  },
+  "routes": {
+    "title": "Routes",
+    "nodes": {
+      "module": {
+        "name": "Lazy Module",
+        "options": {
+          "path": "Path",
+          "pathHint": "Path must only contain alphanumeric, dashes, underscores or slashes (route parameters are not allowed for module path)",
+          "pathPlaceholder": "module-path",
+          "layout": "Layout"
+        }
+      },
+      "view": {
+        "name": "View Route",
+        "options": {
+          "path": "Path",
+          "pathHint": "Leave empty for layout view or '/' route",
+          "view": "View"
+        }
+      },
+      "redirect": {
+        "name": "Redirect Route",
+        "options": {
+          "path": "Path",
+          "redirectTo": "Redirect To"
+        }
+      }
+    },
+    "nodesConnectors": {
+      "module": "Module",
+      "routes": "Routes",
+      "redirect-to": "Redirect To",
+      "parent": "Parent",
+      "children": "Children"
+    }
+  },
+  "data": {
+    "title": "Data"
+  },
+  "settings": {
+    "title": "Settings",
+    "project": {
+      "name": "Project Settings",
+      "general": {
+        "name": "Project Name",
+        "description": "Project Description"
+      },
+      "routing": {
+        "name": "Routing",
+        "entryPath": "Entry Path"
+      }
+    },
+    "theme": {
+      "name": "Theme"
+    },
+    "menus": {
+      "name": "Menus",
+      "modal": {
+        "addNewMenu": "Add a new menu",
+        "createMenu": "Create Menu",
+        "defaultName": "New Menu"
+      },
+      "menu": {
+        "name": "Menu Name",
+        "themeLocation": "Theme Location",
+        "themeLocationEmpty": "-- No theme location --",
+        "addItem": "Add Item",
+        "emptyItems": "There are no menu items created yet.",
+        "delete": "Delete Menu",
+        "deleteModal": {
+          "title": "Delete {{name}} menu?",
+          "message": "Do you really want to delete this menu and all its items? This action is irreversible.",
+          "button": "Delete Menu"
+        }
+      },
+      "item": {
+        "name": "Name",
+        "nameSample": "New Menu Item",
+        "icon": "Icon",
+        "path": "Path / URL",
+        "openInNewTab": "Open in new tab?",
+        "delete": "Delete"
+      },
+      "emptyPlaceholder": {
+        "title": "No Menus",
+        "message": "There are no menus created yet.",
+        "button": "Create Menu"
+      }
+    }
+  },
+  "gizmos": {
+    "image": {
+      "name": "Image",
+      "searchString": "image img photo media picture illustration png svg jpg jpeg",
+      "options": {
+        "src": "Source URL",
+        "alt": "Alternative Text",
+        "align": "Alignment",
+        "width": "Width",
+        "height": "Height"
+      }
+    },
+    "layout": {
+      "name": "Layout",
+      "searchString": "layout flex grid",
+      "options": {
+        "columns": "Columns",
+        "direction": "Direction",
+        "justifyContent": "Justify Content",
+        "alignItems": "Align Items"
+      }
+    },
+    "view": {
+      "name": "View",
+      "searchString": "view subview",
+      "options": {
+        "view": "View"
+      }
+    },
+    "router-outlet": {
+      "name": "Router Outlet",
+      "searchString": "router outlet view subview placeholder empty",
+      "placeholder": "Router view will be rendered here"
+    }
+  },
+  "gizmoCommons": {
+    "groups": {
+      "basic": "Basic",
+      "appearance": "Appearance"
+    },
+    "aligns": {
+      "left": "Left",
+      "center": "Center",
+      "right": "Right"
+    }
+  }
+}
